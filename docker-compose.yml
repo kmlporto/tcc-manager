@@ -5,7 +5,7 @@ services:
     image: postgres:9.6.15
     container_name: postgres-container
     environment:
-      POSTGRES_PASSWORD: root
+      POSTGRES_PASSWORD: postgres
     ports:
       - 15432:5432
 
@@ -21,12 +21,11 @@ services:
       - db_postgres
       
   rails:
-    build:
-      context: .
-      args: 
-        USER: $USER
+    build: .
     container_name: rails-container
     command: /bin/bash
+    stdin_open: true
+    tty: true
     ports:
       - 3000:3000
     volumes:
