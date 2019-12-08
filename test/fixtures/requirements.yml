@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type: 
+  status: MyString
+  nota: 1.5
+  dataApresentacao: 2019-12-08 19:34:01
+  banca: one
+  orientador: one
+  aluno: one
+  documento: one
+
+two:
+  type: 
+  status: MyString
+  nota: 1.5
+  dataApresentacao: 2019-12-08 19:34:01
+  banca: two
+  orientador: two
+  aluno: two
+  documento: two

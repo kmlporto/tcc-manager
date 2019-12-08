@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @requirement.type %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @requirement.status %>
+</p>
+
+<p>
+  <strong>Nota:</strong>
+  <%= @requirement.nota %>
+</p>
+
+<p>
+  <strong>Dataapresentacao:</strong>
+  <%= @requirement.dataApresentacao %>
+</p>
+
+<p>
+  <strong>Banca:</strong>
+  <%= @requirement.banca %>
+</p>
+
+<p>
+  <strong>Orientador:</strong>
+  <%= @requirement.orientador %>
+</p>
+
+<p>
+  <strong>Aluno:</strong>
+  <%= @requirement.aluno %>
+</p>
+
+<p>
+  <strong>Documento:</strong>
+  <%= @requirement.documento %>
+</p>
+
+<%= link_to 'Edit', edit_requirement_path(@requirement) %> |
+<%= link_to 'Back', requirements_path %>
